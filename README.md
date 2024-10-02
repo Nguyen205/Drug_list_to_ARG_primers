@@ -14,7 +14,7 @@ Metagenomic sequencing and qPCR are two mainstream methods for detecting antibio
 [owlready2](https://github.com/pwin/owlready2)  
 [PyVCF](https://github.com/jamescasbon/PyVCF)  
 ### Bioinformatic Tools  
-[Samtools v1.21 and above](https://www.htslib.org/)  
+[Samtools (v1.21 and above)](https://www.htslib.org/)  
 [FreeBayes](https://github.com/freebayes/freebayes)  
 
 ## Installation
