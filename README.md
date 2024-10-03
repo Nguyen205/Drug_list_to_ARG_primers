@@ -47,7 +47,16 @@ freebayes -f [REFERENCE_FASTA_FILE] [CLEANED_BAM_FILE] >[OUTPUT_VCF_FILE]
 ```
 ### Obtain AROs for the drugs of interest
 Not all ARGs are equal. Assume we are interested in detecting ARGs that confer resistance to a few commonly used drugs. The first step is to search for those drugs in the database. Here, we use [CARD](https://card.mcmaster.ca/) to search for antibiotics and ARGs. Assume we have a list of drugs (as listed in `example/Drug_name_example.txt`):  
+  
 ![](Figures/Drug_names.png)
+
+We can search for these names on [CARD](https://card.mcmaster.ca/):  
+
+![](Figures/CARD_search.png)
+
+The ARO of the corresponding drug is listed as labeled below (0000028 for vancomycin):
+
+![](Figures/CARD_ARO.png)
 
 
 
