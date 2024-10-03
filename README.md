@@ -66,6 +66,7 @@ Now, this .txt file containing all AROs of the drugs of interest can be used as 
 ```
 python3 PATH_TO/Drug_list_to_ARG_primers/drug_to_corresponding_ARGs.py -i [INPUT_DRUG_ARO_LIST] -c [INPUT_COVERAGE_TSV_FILE] -p [COVERAGE_PERCENTAGE_THRESHOLD_DEFAULT_70] -o [OUTPUT_FASTA_FILE]
 ```
+### 5. Design qPCR primers and probes using IDT PrimerQuest Tool
 
 
 
