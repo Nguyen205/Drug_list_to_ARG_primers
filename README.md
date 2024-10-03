@@ -67,9 +67,18 @@ Now, this .txt file containing all AROs of the drugs of interest can be used as 
 python3 PATH_TO/Drug_list_to_ARG_primers/drug_to_corresponding_ARGs.py -i [INPUT_DRUG_ARO_LIST] -c [INPUT_COVERAGE_TSV_FILE] -p [COVERAGE_PERCENTAGE_THRESHOLD_DEFAULT_70] -o [OUTPUT_FASTA_FILE]
 ```
 ### 5. Design qPCR primers and probes using IDT PrimerQuest Tool
+In this step, we use the .fasta file generated in step 4 as the input sequence for [PrimerQuest Tool](https://www.idtdna.com/Primerquest/Home/Index) to design corresponding primers and probes.
 
+![](Figures/Primer_Quest_with_labels.png)
 
+After designing primers and probes, download all primers and probes by clicking on the `DOWNLOAD ASSAYS` button:
 
+![](Figures/Download_primers.png)
+
+Now, the primers and probes targeting the ARGs of interest are designed. 
+### 6. Screen primers and probes based on mutations detected in the sample
+Mutation happens frequently in microbial communities. Most of the time, ARGs detected in a sample cannot be identical to the reference sequence. Here, we add a primer screening step to exclude the primer sets that may align with the mutated sites of the ARGs in a given sample using `primer_screening.py`. 
+```
 
 
 
