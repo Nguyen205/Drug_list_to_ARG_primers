@@ -77,8 +77,8 @@ After designing primers and probes, download all primers and probes by clicking 
 
 Now, the primers and probes targeting the ARGs of interest are designed. 
 ### 6. Screen primers and probes based on mutations detected in the sample
-Mutation happens frequently in microbial communities. Most of the time, ARGs detected in a sample cannot be identical to the reference sequence. Here, we add a primer screening step to exclude the primer sets that may align with the mutated sites of the ARGs in a given sample using `primer_screening.py`. 
+Mutation happens frequently in microbial communities. Most of the time, ARGs detected in a sample cannot be identical to the reference sequence. Here, we add a primer screening step to exclude the primer sets that may align with the mutated sites of the ARGs in a given sample using `primer_screening.py`. The input files include: 1) The .xls file downloaded from IDT PrimerQuest Tool containing all designed primers and probes; 2) The .fasta file generated in step 4 for primer design containing the reference sequences of the ARGs of interest; 3) The .vcf file generated in step 3 containing all mutated sites on the ARGs detected in the given sample. The output of this code is a list of primers and probes that will not cover the mutated sites in the given sample. These primers and probes can be tested in a wet lab and be applied for routine surveillance.
 ```
-
-
+python3 PATH_TO/Drug_list_to_ARG_primers/primer_screening.py -p [IDT_PRIMER_QUEST_OUTPUT_XLS] -f [FASTA_FILE_FOR_PRIMER_DESIGN] -v [VCF_FILE_CONTAINING_ALL_MUTATED_SITES] -o [OUTPUT_XLSX_FILE_PATH]
+```
 
