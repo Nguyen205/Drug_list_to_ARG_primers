@@ -36,6 +36,18 @@ Read coverage of each ARG can be summarized by samtools coverage using the sorte
 ```
 samtools coverage –ff 0 -o [OUTPUT_COVERAGE_TSV_FILE_PATH]
 ```
+An additional step to remove the secondary flags in the read mapping file.
+```
+samtools view --remove-flags 0x100 -b [INPUT_BAM_FILE] >[OUTPUT_CLEANED_BAM_FILE]
+```
+### Get mutated sites in all mapped ARGs
+FreeBayes is used in this step to obtain the mutated sites in different ARGs detected in the given sample. A .vcf file will be generated to summarize all mutated sites.
+```
+freebayes -f [REFERENCE_FASTA_FILE] [CLEANED_BAM_FILE] >[OUTPUT_VCF_FILE]
+```
+### Obtain AROs for the drugs of interest
+
+
 
 
 
