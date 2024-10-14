@@ -65,6 +65,8 @@ Summarize all AROs in a .txt file, as shown in `example/Drug_ARO_list_example.tx
 Now, this .txt file containing all AROs of the drugs of interest can be used as the input for `drug_to_corresponding_ARGs.py`. This code also requires the .tsv file generated in step 2 containing all ARGs mapped in the given sample. This code will generate a .fasta file containing the sequence of the ARGs detected in the given sample that confer resistance to the listed drugs.
 ```
 cd PATH_TO/Drug_list_to_ARG_primers/  
+```
+```
 python3 PATH_TO/Drug_list_to_ARG_primers/drug_to_corresponding_ARGs.py -i [INPUT_DRUG_ARO_LIST] -c [INPUT_COVERAGE_TSV_FILE] -p [COVERAGE_PERCENTAGE_THRESHOLD_DEFAULT_70] -o [OUTPUT_FASTA_FILE]
 ```
 ### 5. Design qPCR primers and probes using IDT PrimerQuest Tool
