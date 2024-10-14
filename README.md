@@ -34,7 +34,7 @@ samtools index [SORTED_BAM_FILE_PATH]
 ```
 Read coverage of each ARG can be summarized by samtools coverage using the sorted .bam file as input. Here, we use `-ff 0` to remove the restriction of secondary mapping.
 ```
-samtools coverage –ff 0 -o [OUTPUT_COVERAGE_TSV_FILE_PATH]
+samtools coverage --ff 0 -o [OUTPUT_COVERAGE_TSV_FILE_PATH] [INPUT_BAM_FILE_PATH]
 ```
 An additional step to remove the secondary flags in the read mapping file.
 ```
