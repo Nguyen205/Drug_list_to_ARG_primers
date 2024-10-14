@@ -48,7 +48,7 @@ drug_list=file.readlines()
 file.close()  
 
 for i in range(0,len(drug_list)):
-    drug_list[i]=drug_list[i].strip('\n')
+    drug_list[i]=drug_list[i].strip('\n').strip()
 
 map_file=pd.read_csv(args.coverage,sep='\t')   
 
