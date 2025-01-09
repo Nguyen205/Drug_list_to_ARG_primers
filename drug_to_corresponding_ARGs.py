@@ -33,7 +33,7 @@ parser.add_argument('-o', '--output', required = False,
 parser.add_argument('-i', '--input',required = True,
                     help='Input txt file path listing AROs of the drugs of interest.')
 parser.add_argument('-c', '--coverage', required = True,
-                    help='Input tsv file generated from Samtools coverage containing the ARG mapping information of a given sample.')
+                    help='Input tsv file generated from Samtools coverage containing the ARG mapping information of a given sample.')   
 parser.add_argument('-p', '--percent',required = False,
                     help='The coverage percent threashold to determine whether an ARG is detected. Default: 70',default=70)
 args = parser.parse_args()
@@ -76,7 +76,7 @@ for i in range(0,len(ARG_list)):
 
 output_list=list(set(output_list).intersection(set(mapped_ARGs)))
 
-out_file=open(args.output,'w+')   
+out_file=open(args.output,'w')   
 for i in range(0,len(output_list)):
     for j in range(0,len(fasta),2):
         if output_list[i] in fasta[j]:
