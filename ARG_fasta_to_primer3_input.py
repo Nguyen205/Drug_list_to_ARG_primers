@@ -15,7 +15,7 @@ parser.add_argument('-o', '--output', required = False,
 parser.add_argument('-i', '--input',required = True,
                     help='Input fasta file path after screening')
 parser.add_argument('-s', '--size',required = False,
-                    help='PCR amplicon size range (bp), default: 75-150',default='75-150')
+                    help='PCR amplicon size range (bp), default: 75-250',default='75-250')
 
 args = parser.parse_args()
 
