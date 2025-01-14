@@ -8,7 +8,7 @@ Created on Thu Jan  9 17:23:28 2025
 import argparse
 import os
 
-parser = argparse.ArgumentParser(description='Use the ARO list of antibiotics of interested to search for the sequences of antibiotic resistance genes (ARGs).')
+parser = argparse.ArgumentParser(description='Transfer the fasta files of targeted ARGs into Primer3 input format.')
 
 parser.add_argument('-o', '--output', required = False,
                     help='Output fasta file path and name. Default: ./output/primer3_input',default='./output/primer3_input')
