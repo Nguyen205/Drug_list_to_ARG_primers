@@ -47,11 +47,15 @@ for file_path in file_list:
         temp_df.loc[i*4,'Length']=p3_file_content[18+i*30+8].split(',')[1].strip('\n')
         temp_df.loc[i*4+1,'Length']=p3_file_content[18+i*30+10].split(',')[1].strip('\n')
         temp_df.loc[i*4+2,'Length']=p3_file_content[18+i*30+9].split(',')[1].strip('\n')
+        temp_df.loc[i*4,'Tm']=p3_file_content[18+i*30+11].split('PRIMER_LEFT_'+str(int(i))+'_TM=')[1].strip('\n')
+        temp_df.loc[i*4+1,'Tm']=p3_file_content[18+i*30+13].split('PRIMER_INTERNAL_'+str(int(i))+'_TM=')[1].strip('\n')
+        temp_df.loc[i*4+2,'Tm']=p3_file_content[18+i*30+12].split('PRIMER_RIGHT_'+str(int(i))+'_TM=')[1].strip('\n')
+        temp_df.loc[i*4,'GC Percent']=p3_file_content[18+i*30+14].split('PRIMER_LEFT_'+str(int(i))+'_GC_PERCENT=')[1].strip('\n')
+        temp_df.loc[i*4+1,'GC Percent']=p3_file_content[18+i*30+16].split('PRIMER_INTERNAL_'+str(int(i))+'_GC_PERCENT=')[1].strip('\n')
+        temp_df.loc[i*4+2,'GC Percent']=p3_file_content[18+i*30+15].split('PRIMER_RIGHT_'+str(int(i))+'_GC_PERCENT=')[1].strip('\n')
+        temp_df.loc[i*4+3,'Amplicon']=p3_file_content[18+i*30+30].split('PRIMER_PAIR_'+str(int(i))+'_PRODUCT_SIZE=')[1].strip('\n')
+    output_df=output_df.append(temp_df,ignore_index=True)
     
-    
-    
-    
-    
-    
+output_df.to_excel(args.output,index=None)
     
     
