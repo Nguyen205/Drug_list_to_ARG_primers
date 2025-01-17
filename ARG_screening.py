@@ -53,7 +53,7 @@ print('Writing output fasta file......')
 if args.mode=='A':
     output_file=open(args.output,'w')
     for i in range(0,len(ARG_info)):
-        print('>'+ARG_info.loc[i,'ARO'],file=output_file)
+        print('>'+ARG_info.loc[i,'ARO']+'_'+ARG_info.loc[i,'ARG Name'],file=output_file)
         print(ARG_info.loc[i,'Sequence'],file=output_file)
     output_file.close()
 elif args.mode=='C':
@@ -67,7 +67,7 @@ elif args.mode=='C':
     output_df.reset_index(inplace=True,drop=True)
     output_file=open(args.output,'w')
     for i in range(0,len(output_df)):
-        print('>'+output_df.loc[i,'ARO'],file=output_file)
+        print('>'+output_df.loc[i,'ARO']+'_'+output_df.loc[i,'ARG Name'],file=output_file)
         print(output_df.loc[i,'Sequence'],file=output_file)
     output_file.close()
 elif args.mode=='F':
@@ -81,14 +81,14 @@ elif args.mode=='F':
     output_df.reset_index(inplace=True,drop=True)
     output_file=open(args.output,'w')
     for i in range(0,len(output_df)):
-        print('>'+output_df.loc[i,'ARO'],file=output_file)
+        print('>'+output_df.loc[i,'ARO']+'_'+output_df.loc[i,'ARG Name'],file=output_file)
         print(output_df.loc[i,'Sequence'],file=output_file)
     output_file.close()
 else:
     print('Mode not recognized, use default setting to include all ARGs.')
     output_file=open(args.output,'w')
     for i in range(0,len(ARG_info)):
-        print('>'+ARG_info.loc[i,'ARO'],file=output_file)
+        print('>'+ARG_info.loc[i,'ARO']+'_'+ARG_info.loc[i,'ARG Name'],file=output_file)
         print(ARG_info.loc[i,'Sequence'],file=output_file)
     output_file.close()
         
