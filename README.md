@@ -9,7 +9,7 @@ Metagenomic sequencing and qPCR are two mainstream methods for detecting antibio
 * [Owlready2](https://github.com/pwin/owlready2)  
 * [PyVCF](https://github.com/jamescasbon/PyVCF)  
 ### Bioinformatic Tools  
-* [Samtools](https://www.htslib.org/) (v1.21 or above)  
+* [Samtools](https://www.htslib.org/) (v1.13 or above)  
 * [FreeBayes](https://github.com/freebayes/freebayes)  
 * [Bowtie2](https://github.com/BenLangmead/bowtie2) (or any other read mapping tool that can map fastq to a reference fasta file to generate a sam/bam file)
 * [IGV](https://igv.org/)
