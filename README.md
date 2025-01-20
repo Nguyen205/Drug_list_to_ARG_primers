@@ -40,6 +40,7 @@ make test
 ```
 
 ## Usage 
+Before you start, it is recommended to use sequencing quality filtering tools (e.g., [PriceSeqFilter](https://vcru.wisc.edu/simonlab/bioinformatics/programs/price/PriceDocumentation140408/independentQualityFilter.html)) to remove low-quality reads from the fastq files.
 ```
 cd Drug_list_to_ARG_primers
 ```
