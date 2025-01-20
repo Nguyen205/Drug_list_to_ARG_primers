@@ -51,3 +51,12 @@ For single-read fastq input:
 ```
 ./Drug_to_primer.sh -q read.fastq -d drug_list.txt
 ```
+Other optional parameters:
+```
+-t INT     Number of threads used for running the code. (default: 1)
+-p INT     The coverage percentage cutoff for determining the presence of a gene. (default: 70)
+-m STR     The mode for ARG screening. A: all ARGs are included. C: select one ARG from each cluster of ARGs that share highly similar sequences. F: select one ARG from each ARG family that share highly similar functions. (default: A)
+-s STR     The range of the PCR amplicon size. (default: 75-250)
+-f         Run FreeBayes to exclude primers that bind to mutated sites of the ARGs in the given sample.
+-o STR     Name the output directory. (default: the current time stamp)
+```
