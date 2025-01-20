@@ -100,5 +100,5 @@ The ARG mapping file removing all secondary flags as the input of FreeBayes for 
 The file containing all mutated sites of the ARGs detected in the given sample.<br />
 <br />
 **designed_primers_mutation_screened.xlsx**<br />
-The file containing all PCR primers with perfect matching to the ARGs in the given sample.<br />
+The file containing all PCR primers with perfect matching to the ARGs conferring resistance to the given drugs in the given sample.<br />
 <br />
