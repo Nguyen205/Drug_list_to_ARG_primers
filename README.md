@@ -44,11 +44,11 @@ Before you start, it is recommended to use sequencing quality filtering tools (e
 ```
 cd Drug_list_to_ARG_primers
 ```
-For paired-read fastq input (See example/Drug_name_example.txt for the format of the drug list):
+For paired-read fastq input (See `example/Drug_name_example.txt` for the format of the drug list):
 ```
 ./Drug_to_primer.sh -1 read1.fastq -2 read2.fastq -d drug_list.txt
 ```
-For single-read fastq input (See example/Drug_name_example.txt for the format of the drug list):
+For single-read fastq input (See `example/Drug_name_example.txt` for the format of the drug list):
 ```
 ./Drug_to_primer.sh -q read.fastq -d drug_list.txt
 ```
