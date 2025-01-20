@@ -90,4 +90,15 @@ The directory containing all primer3 input files for each individual ARG after s
 **primer3_output**<br />
 The directory containing all primer3 designing results for each individual ARG after screening.<br />
 <br />
-
+**designed_primers.xlsx**<br />
+The file containing all PCR primers designed for the ARGs conferring resistance to the given drugs without considering gene mutations.<br />
+<br />
+**map_cleaned.bam**<br />
+The ARG mapping file removing all secondary flags as the input of FreeBayes for detecting ARG mutations.<br />
+<br />
+**mutations.vcf**<br />
+The file containing all mutated sites of the ARGs detected in the given sample.<br />
+<br />
+**designed_primers_mutation_screened.xlsx**<br />
+The file containing all PCR primers with perfect matching to the ARGs in the given sample.<br />
+<br />
