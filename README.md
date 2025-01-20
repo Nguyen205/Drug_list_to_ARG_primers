@@ -52,7 +52,7 @@ For single-read fastq input (See `example/Drug_name_example.txt` for the format 
 ```
 ./Drug_to_primer.sh -q read.fastq -d drug_list.txt
 ```
-Other optional parameters:
+Other optional parameters (type `./Drug_to_primer.sh -h` for detailed usage information):
 ```
 -t INT     Number of threads used for running the code. (default: 1)
 -p INT     The coverage percentage cutoff for determining the presence of a gene. (default: 70)
