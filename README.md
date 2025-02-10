@@ -21,10 +21,10 @@ Metagenomic sequencing and qPCR are two mainstream methods for detecting antibio
 sudo apt-get install -y build-essential g++ cmake git-all
 ```
 ```
-git clone https://github.com/Nguyen205/Drug_list_to_ARG_primers.git msedap
+git clone https://github.com/Nguyen205/MSEDAP-Metagenomic-Sequencing-Data-to-ARG-Primers.git msedap
 ```
 ```
-cd Drug_list_to_ARG_primers
+cd msedap
 ```
 ```
 git clone https://github.com/primer3-org/primer3.git primer3
@@ -42,17 +42,17 @@ make test
 ## Usage 
 Before you start, it is recommended to use sequencing quality filtering tools (e.g., [PriceSeqFilter](https://vcru.wisc.edu/simonlab/bioinformatics/programs/price/PriceDocumentation140408/independentQualityFilter.html)) to remove low-quality reads from the fastq files.
 ```
-cd Drug_list_to_ARG_primers
+cd msedap
 ```
 For paired-read fastq input (See `example/Drug_name_example.txt` for the format of the drug list):
 ```
-./Drug_to_primer.sh -1 read1.fastq -2 read2.fastq -d drug_list.txt
+./msedap.sh -1 read1.fastq -2 read2.fastq -d drug_list.txt
 ```
 For single-read fastq input (See `example/Drug_name_example.txt` for the format of the drug list):
 ```
-./Drug_to_primer.sh -q read.fastq -d drug_list.txt
+./msedap.sh -q read.fastq -d drug_list.txt
 ```
-Other optional parameters (type `./Drug_to_primer.sh -h` for detailed usage information):
+Other optional parameters (type `./msedap.sh -h` for detailed usage information):
 ```
 -t INT     Number of threads used for running the code. (default: 1)
 -p INT     The coverage percentage cutoff for determining the presence of a gene. (default: 70)
