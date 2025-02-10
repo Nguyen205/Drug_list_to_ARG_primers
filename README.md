@@ -21,7 +21,7 @@ Metagenomic sequencing and qPCR are two mainstream methods for detecting antibio
 sudo apt-get install -y build-essential g++ cmake git-all
 ```
 ```
-git clone https://github.com/Nguyen205/Drug_list_to_ARG_primers.git Drug_list_to_ARG_primers
+git clone https://github.com/Nguyen205/Drug_list_to_ARG_primers.git msedap
 ```
 ```
 cd Drug_list_to_ARG_primers
