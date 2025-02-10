@@ -52,7 +52,7 @@ For single-read fastq input (See `example/Drug_name_example.txt` for the format 
 ```
 ./msedap.sh -q read.fastq -d drug_list.txt
 ```
-Other optional parameters (type `./msedap.sh -h` for detailed usage information):
+Other optional parameters (Type `./msedap.sh -h` for detailed usage information):
 ```
 -t INT     Number of threads used for running the code. (default: 1)
 -p INT     The coverage percentage cutoff for determining the presence of a gene. (default: 70)
